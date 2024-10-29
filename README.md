@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-## Project Setup
+# Project Setup
 Before starting, make sure to set up the .env file with the required environment variables:
 
 1. Create a .env file in the root directory of the project.
@@ -19,7 +17,7 @@ Before starting, make sure to set up the .env file with the required environment
   `npm install`
   `npm start`
 
-
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
