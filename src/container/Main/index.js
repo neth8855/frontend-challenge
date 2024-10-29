@@ -8,8 +8,7 @@ import Header from "../../common/Header"
 import SearchResult from "./SearchResult"
 
 export default function Main() {
-    // const [searchParams, setSearchParams] = useState({ country: '', name: "", street: "", zip: "" });
-    const [searchParams, setSearchParams] = useState({ country: '', name: "Uberall", street: "", zip: "" });
+    const [searchParams, setSearchParams] = useState({ country: '', name: "", street: "", zip: "" });
     const inputArray = [
         {name: "name", label: "Business name", placeholder: "e.g. Jane's bakery", value: "Jane's Bakery"}, 
         {name: "street", label: "Street and Number", placeholder: "e.g. 600 California Street", value: "600 California Street"}, 
