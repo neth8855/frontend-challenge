@@ -5,6 +5,7 @@ import { useQuery } from 'react-query';
 import api from '../utils/axiosInstance';
 import { Alert, Backdrop, Divider, Grid2, List, ListItem, ListItemText, Dialog, DialogTitle, DialogContent, IconButton, Typography, Box } from '@mui/material';
 import CircularLoading from './CircularLoading';
+import getDayOfWeek from '../utils/getDaysOfWeek';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 //   '& .MuiPaper-root': {
@@ -123,7 +124,7 @@ export default function DataModal({open, params, handleClose}) {
                                         {locationData.openingHours?.map((hour, index) => (
                                             <ListItem key={index}>
                                             <ListItemText
-                                                primary={`Day ${hour.dayOfWeek}: ${hour.from1} - ${hour.to1}`}
+                                                primary={`${getDayOfWeek(hour.dayOfWeek)}: ${hour.from1} - ${hour.to1}`}
                                             />
                                             </ListItem>
                                         )) || <Typography variant="body2">Not Available</Typography>}
